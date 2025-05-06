@@ -1,0 +1,16 @@
+name: github custom actions
+on: workflow_dispatch
+
+jobs:
+  checkout-git-repo:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: investigate Repo 
+        run: |
+          pwd
+          ls - lart
+          cd .Github_actions_demo
+          ls -lart
