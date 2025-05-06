@@ -2,11 +2,11 @@ name: Github Actions On Push
 on: push
 
 jobs:
-    on-push-job:
-        runs-on: ubuntu-latest
+  on-push-job:
+      runs-on: ubuntu-latest
 
-        steps: 
-      - name: First Step
+      steps: 
+        - name: First Step
         run: |
-          echo "this is a step within a job within a workflow"
-          ls -lart
+         echo "this is a step within a job within a workflow"
+         ls -lart
