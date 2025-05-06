@@ -7,6 +7,6 @@ jobs:
 
     steps: 
       - name: First Step
-      run: |
-        echo "this is a step within a job within a workflow"
-        ls -lart
+        run: |
+          echo "this is a step within a job within a workflow"
+          ls -lart
