@@ -9,7 +9,7 @@ jobs:
       - name: Git Clone repo
         run: git clone https://github.com/nikkitagora/website
       - name: move web files
-        run: sudo mv ./NG-Website/* /usr/share/nginx/html/
+        run: sudo mv ./website/* /usr/share/nginx/html/
       - name: Start Nginx Service
         run: sudo systemctl start nginx
       - name: Test Web Service
