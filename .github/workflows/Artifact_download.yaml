@@ -12,7 +12,7 @@ jobs:
           echo "some stuff" >> my_file_to_download
           echo "more stuff" >> my_file_to_download
       - name: download to artifact
-        uses: actions/upload-artifact@V4
+        uses: actions/upload-artifact@v4
         with:
             name: my_file_to_download
             path: /home/runner/work/github/Github_actions_demo
