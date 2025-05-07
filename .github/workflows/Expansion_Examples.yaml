@@ -2,7 +2,7 @@ name: Expansion and Other Features
 on: workflow_dispatch
 
 jobs:
-  show meta data of system:
+  show-meta-data-of-system:
     runs-on: ubuntu-latest
 
     steps:
