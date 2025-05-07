@@ -1,0 +1,13 @@
+name: Github Actions On Push
+on: workflow_dispatch
+
+jobs:
+  clone-website-and-run-podman: 
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Git Clone repo
+        run: git clone https://github.com/nikkitagora/website
+      - name: Check website files
+        run: |
+          ls -lart
