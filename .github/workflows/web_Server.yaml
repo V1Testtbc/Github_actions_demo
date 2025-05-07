@@ -1,4 +1,4 @@
-name: Github Actions On Push
+name: Deploying multiple runners
 on: workflow_dispatch
 
 jobs:
@@ -8,6 +8,9 @@ jobs:
     steps: 
       - name: Git Clone repo
         run: git clone https://github.com/nikkitagora/website
-      - name: Check website files
-        run: |
-          ls -lart
+      - name: move web files
+        run: sudo mv ./NG-Website/* /usr/share/nginx/html/
+      - name: Start Nginx Service
+        run: sudo systemctl start nginx
+      - name: Test Web Service
+        run: python3 -c "import requests; r=requests.get('http://localhost:8080'); print(r.status_code)"
