@@ -9,4 +9,4 @@ jobs:
       - name: get github details
         run: echo "${{ github }}"
       - name: get Github context
-        run: echo "${{ to JSON( github ) }}
+        run: echo "${{ toJSON( github ) }}
